@@ -1,0 +1,107 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #18294f;
+  margin: 0;
+}
+
+header {
+  padding: 1em 0 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li a {
+  font-size: 1.125rem;
+  color: #6c8fe0;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+}
+
+nav li a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  nav li {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav ul {
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  nav li {
+    width: auto;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+}
